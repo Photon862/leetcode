@@ -1,0 +1,123 @@
+Important Pattern/Algorithims
+
+PATTERNS:
+- Two Pointers
+- Sliding Window
+- Hashing
+- Bit Manipulation
+- Divide and Conquer
+
+ALGORITHIMS:
+- Dynamic Programming (DP)
+- Backtracking
+- Greedy Algorithms
+- Binary Search
+- Breadth-First Search (BFS)
+- Depth-First Search (DFS)
+- Graph Traversal (DFS, BFS)
+- Trie (Prefix Tree)
+- Union Find (Disjoint Set Union, DSU)
+- Heap/Priority Queue
+- Dijkstra's Algorithm (Single-source shortest path)
+- Knapsack Problem (0/1 Knapsack)
+- Longest Common Subsequence (LCS)
+- Matrix Chain Multiplication
+- Topological Sorting
+- Binary Search Tree (BST)
+- AVL Tree (Balanced BST)
+- Sieve of Eratosthenes (Prime Number Generation)
+
+
+Dyanmic Programming
+- breaking into smaller pieces
+- solving smaller pieces then using them for solving bigger more efficiently
+
+Two Pointers
+- if u want to find 2 items in an array that add up to a certain number,
+1 pointer begin at start and 1 pointer begin at end
+if the result is too big, move the end pointer down (so answer gets smaller)
+if the result is too small, move the start pointer up (so answer gets bigger)
+- keep doing until u find answer
+
+Sliding Window
+- if there is a window of viewing 3 items only, you slide the 1st item out and push 2 forward
+then add 1 more item in so theres still 3 items only but its order
+- 1, 2, 3 is the item window - slide so now 2, 3, 4 and etc
+
+Backtracking
+- simliar to depth first search - go in deep in 1 path first
+if 1 option fails, backtrack to the last decision and try another option
+
+Greedy Algorithims
+- when making options in a deep search, the algo will choose the smartest decision in the moment
+not random starting anywhere.
+not caring about the future steps or overall success just choosing the best in the moment not random
+
+Binary Search
+- when searching for a number in a list in order,
+it starts first with halfway then chooses smaller or bigger part
+if the answer is smaller, then u half the search paramters again and keep halfing with choosing 1 side
+lets say 1-100 - start with 50 - answer is smaller - now 25 - answer is smaller - now 12.5..etc
+
+Breadth First Search (BFS)
+starts by choosing the first path and going through all the options until hit rock bottom or fail
+then go back and try a whole other route again - and marks each option after failing so u wont repeat
+
+Depth First Search (DFS)
+searches the 1st layer of options all first, then explores all 2nd option layer..etc
+explores in layers instead of diving deep in 1 option all the way like BFS
+
+Hashing
+a function that assigns an index to a huge list so each item has a unique number or assign index
+when u want to find something in the list, put it in the hash function and u can find the item
+
+Divide and Conquer
+- u split the job up into smaller parts, solve smaller parts easier then join them back together
+
+Bit Manipulation
+- coding operators to check if variables relationship
+- AND - checks if this and this
+- OR - this or this
+- XOR - if they are not the smaller
+- NOT - flips this and that
+- Shift - shifting numbers changing them
+
+Trie (Prefix Tree)
+- trees are like branches for common prefix so eg "car" and "cat" in terms of the path of tree
+u can go up the c and a branch since they share common then branch out for r and t seperaetly
+
+Union Find (Disjoint Set Union, DSU)
+- like grouping so each set has its own group, and if common are found the union is found like a chain group
+so if A and B chain group while being both in their own groups and B wants to chain with C
+- now if u want to check if A is group with C they are because of union
+
+Heap/Priority Queue
+- organising like a tree so if u have numbers 3, 5, 2, 1, 8 - for a min-heap u start with smallest number
+the heap goes in order of the array so it depend how u arrange and builds a binary tree
+filling row left to right to map it
+- start with 3 thats the root
+- now 5 so its bigger so it goes below the 3 root
+- now 2 is supposed to go 2nd branch of 3, but its smaller than 3 so now 2 is new root and link to 5, 3
+- now 1 is supposed to go branch coming from 5 but since it smaller it swaps place
+  - from 3 -> 5 -> 1 now 3 -> 1 -> 5
+  - now 1 is smaller so moves to root position
+  - 1 -> 3 -> 5
+- lastly 8 goes to 2nd brach -> 1st branch so its 1 -> 2 -> empty to 1 -> 2 -> 8
+
+Dijkstra’s Algorithm (Single-source shortest path)
+- 1 example of greedy algo
+
+Knapsack Problem (0/1 Knapsack)
+- finds the right combination within a limit set to achieve max points for the item combinations
+- solve using dynamic Programming
+
+Longest Common Subsequence (LCS)
+- looks for the longest match of 2 items or strings
+etc abcde and abcd so first match a and done, then match b, c, d and e there is no match
+- so final match is abcd
+
+
+
+
+
+
