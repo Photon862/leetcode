@@ -116,6 +116,29 @@ Longest Common Subsequence (LCS)
 etc abcde and abcd so first match a and done, then match b, c, d and e there is no match
 - so final match is abcd
 
+Matrix Chain Multiplication
+- the best order in which to multiply matrices together
+if the wrong order it will take longer to multiply
+
+Topological Sorting
+- putting the order for items if they are dependent on the one before them finishing before they start
+if B needs to wait for A, then its arranged A, B with a first then when its done B starts
+
+- Binary Search Tree (BST)
+its a tree that has a rule for how numbers are organised
+left for smaller numbers and right for bigger numbers when drawing the root branch and continuing
+- happens in order of the array items
+
+- AVL Tree (Balanced BST)
+same as BST but it balances itself out  - sometimes BST can get overstacked if numbers are too big or small
+AVL tree helps to balance both left and right sides of the tree or branch so each node option is fairly Balanced
+- it rearranges the tree and sometimes the nodes in the tree to try balance it out
+
+Sieve of Eratosthenes (Prime Number Generation)
+- if u have a list of numbers divide all numbers by the smallest prime number and if it does mark it out
+then do it with the next lowest prime number and mark out the ones that get divided nicely
+eventaully u will finish the whole list and be left with the ones that didnt divide into anything
+
 
 
 

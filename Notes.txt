@@ -1,0 +1,7 @@
+
+
+learn important algo patterns
+solve problems including two-pattern, hashing, sliding window..etc
+do dynamic programming, backtracking and Traversal
+then segment tree, trie, union find
+system design concepts
