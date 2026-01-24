@@ -68,7 +68,7 @@ class Solution:
             # now a is 97 b is 98 so if u -a from it its a=0, b=1..etc easier to index
             for c in s:
                 count[ord(c) - ord('a')] += 1
-            
+
             # tuple converts immutable list to mutable so it can be put in the dictionary as a key
             # now append adds all the words in the count tuple format to the dictionary
             res[tuple(count)].append(s)
