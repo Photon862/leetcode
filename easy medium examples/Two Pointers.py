@@ -51,7 +51,6 @@ class Solution:
             # if a is bigger than 0 stop loop since no way to add to 0
             if a > 0:
                 break
-
             # skip same element to avoid duplicates in answer
             if i > 0 and a == nums[i - 1]:
                 continue
@@ -63,22 +62,18 @@ class Solution:
             while l < r:
                 # the number chosen at start + 2 pointer numbers
                 threeSum = a + nums[l] + nums[r]
-
                 # if the sum is too big move right pointer to left (smaller)
                 if threeSum > 0:
                     r -= 1
-
                 # if the sum is too small move left pointer to right (bigger)
                 elif threeSum < 0:
                     l += 1
-
                 # else it equals to 0 and append (add) it to res array at the start
                 else:
                     res.append([a, nums[l], nums[r]])
                     #cancel loop by adding and removing from l and r each
                     l += 1
                     r -= 1
-
                     # this 3 set numbers is done so now make sure there is no duplicates
                     while nums[l] == nums[l - 1] and l < r:
                         l += 1
