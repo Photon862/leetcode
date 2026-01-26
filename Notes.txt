@@ -5,3 +5,14 @@ solve problems including two-pattern, hashing, sliding window..etc
 do dynamic programming, backtracking and Traversal
 then segment tree, trie, union find
 system design concepts
+
+
+Time complexity
+O(1) - takes fixed time no matter how big or small the input is
+O(n) - takes a fixed linear increasing time depending on the amount of input
+O(n^2) - takes quadratic time longer based on input size
+..etc
+
+Space complexity
+O(1) - fixed space memory and resources to solve no matter the input size
+O(n) - linear increase in space and memory proportional to size of input
